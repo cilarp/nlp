@@ -3,8 +3,6 @@ use std::collections::HashMap;
 fn main() {
     let s = "Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can.";
     let v: Vec<&str> = s.split(' ').collect();
-    let v: Vec<&str> = v.iter().map(|s| s.trim_matches(',')).collect();
-    let v: Vec<&str> = v.iter().map(|s| s.trim_matches('.')).collect();
 
     let mut res = HashMap::new();
     for i in 0..v.len() {
